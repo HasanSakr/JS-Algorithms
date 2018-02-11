@@ -1,0 +1,19 @@
+/*Return the remaining elements of an array after chopping off n elements from the head.
+The head means the beginning of the array, or the zeroth index.*/
+
+
+function slasher(arr, howMany) {
+  // it doesn't always pay to be first
+  var narr= [];
+  for(var i = 1 ; i <= arr.length ; i ++){
+//     arr.sift(howMany);
+    if(howMany >= arr.length){
+      return narr;
+    }
+    else
+      narr =  arr.slice(howMany);
+     }
+  return narr;
+}
+
+slasher([1, 2, 3], 2);
