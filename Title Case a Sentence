@@ -1,0 +1,20 @@
+//return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+//For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+
+
+function titleCase(str) {
+
+ str = str.toLowerCase();
+ var sp = str.split(' ');
+ var a = [];
+ 
+  for(var i=0; i < sp.length; i++){
+    //  assigning my changes to the array again, so all my efforts are in vain:
+     sp[i] = sp[i].charAt(0).toUpperCase() + sp[i].substring(1);     
+   }
+  // Directly return the joined string
+  return sp.join(' '); 
+}
+
+titleCase("I'm a little tea pot");
