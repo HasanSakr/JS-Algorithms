@@ -1,0 +1,23 @@
+//Return the length of the longest word in the provided sentence.
+
+//The returned value should be a number.
+
+
+function findLongestWord(str) {
+  
+  var re = /\s/gi;//regular expression to whitespace in the global, ignoring the case
+  var nameList = str.split(re);//split method will store the splitted string in an array
+  // I splitted the array using the white space regular expression
+
+    var longest = 0;//define a var to store the length of the array index
+
+    for(var i=0; i < nameList.length; i++){//iterate through the array
+      if(nameList[i].length > longest){//when a string >0 store  it in my var//when its greater than my val //store it again
+        longest = nameList[i].length;//store the largest val when the condition is true
+    }      
+} 
+
+return longest;
+  }
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
