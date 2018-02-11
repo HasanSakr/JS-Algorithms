@@ -1,0 +1,14 @@
+/* Return the factorial of the provided integer.
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+Factorials are often represented with the shorthand notation n!
+For example: 5! = 1 * 2 * 3 * 4 * 5 = 120 */
+
+function factorialize(num) {
+  var f = 1;//since we use multiple, we cant initiate f to 0;
+  for (var c = 1; c <= num; c++)//for itereator between 1 and num increment it
+  f *= c;//multiply f by the incremented c
+  return f;//when the loop finished for c=num return the last multiple which is f
+
+}
+
+factorialize(5);
